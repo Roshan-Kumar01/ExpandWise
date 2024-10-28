@@ -1,0 +1,72 @@
+/* Sidebar.css */
+
+.sidebar {
+    width: 250px; /* Width of the sidebar */
+    height: calc(100vh - 60px); /* Full height minus the header height */
+    background-color: #ffffff; /* White background color */
+    color: #2c3e50; /* Dark text color for contrast */
+    position: fixed; /* Fixed positioning */
+    top: 60px; /* Offset from the top to start below the header */
+    left: -250px; /* Hide off-screen initially */
+    transition: left 0.3s ease; /* Smooth transition for visibility */
+    padding-top: 20px; /* Padding at the top */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.sidebar--visible {
+    left: 0; /* Slide in when visible */
+}
+
+.sidebar__menu {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.sidebar__menu li {
+    padding: 20px; /* Increased padding for menu items */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+    font-size: 18px; /* Increased font size for better readability */
+}
+
+.sidebar__menu li:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+}
+
+.sidebar__menu li:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0; /* Divider between items with lighter color */
+}
+
+/* Add margin to create space between consecutive items */
+.sidebar__menu li + li {
+    margin-top: 10px; /* Space between consecutive items */
+}
+
+/* Dropdown icon styling */
+.dropdown-icon {
+    font-size: 22px; /* Icon font size */
+    margin-left: 35px; /* Space between text and icon */
+    transition: transform 0.3s ease; /* Smooth icon rotation */
+}
+
+.dropdown-icon.open {
+    transform: rotate(180deg); /* Rotate icon when dropdown is open */
+}
+
+/* Dropdown submenu styling */
+.dropdown-menu {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    padding-left: 20px; /* Indent submenu items */
+    background-color: #f9f9f9; /* Lighter background for submenu */
+}
+
+.dropdown-menu li {
+    padding: 10px 20px; /* Smaller padding for submenu items */
+    font-size: 16px; /* Smaller font size for submenu items */
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+}
