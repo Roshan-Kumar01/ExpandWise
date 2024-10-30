@@ -8,6 +8,8 @@ import IECCode from './components/exportRegistration/IECCode/IECCode';
 import ADCode from './components/exportRegistration/ADCode/ADCode';
 import GSTCode from './components/exportRegistration/GSTLUT/GSTCode';
 import IORCode from './components/exportRegistration/IOR/IORCode';
+import GenAI from './components/GenAI/GenAI';
+import ChatInterface from './components/GenAI/ChatInterface';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.css';
 
@@ -18,10 +20,12 @@ function App() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+
   return (
     <div className="app">
       <Router>
         <Header isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
+        <GenAI/>
         <div className="app__content">
           <Sidebar isVisible={isMenuOpen} />
           <Routes>
@@ -31,6 +35,7 @@ function App() {
             <Route path="/ad-code" element={<ADCode isMenuOpen={isMenuOpen} />} />
             <Route path="/gst-lut" element={<GSTCode isMenuOpen={isMenuOpen} />} />
             <Route path="/ior" element={<IORCode isMenuOpen={isMenuOpen} />} />
+            <Route path="/ai-chat" element={<ChatInterface/>} />
           </Routes>
         </div>
       </Router>

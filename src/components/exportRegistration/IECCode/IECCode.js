@@ -1,6 +1,5 @@
 // src/components/IECCode.js
 import React,{ useState } from 'react';
-import { Link } from 'react-router-dom';
 import './IECCode.css';
 import { RiAddLine } from 'react-icons/ri';
 import { FaAngleRight } from "react-icons/fa6";

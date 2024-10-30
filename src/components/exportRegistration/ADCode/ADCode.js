@@ -1,6 +1,5 @@
 // src/components/ADCode.js
 import React,{ useState } from 'react';
-import { Link } from 'react-router-dom';
 import './ADCode.css';
 import { RiAddLine } from 'react-icons/ri';
 import { FaAngleRight } from "react-icons/fa6";
