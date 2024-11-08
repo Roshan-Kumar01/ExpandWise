@@ -10,6 +10,9 @@ import GSTCode from './components/exportRegistration/GSTLUT/GSTCode';
 import IORCode from './components/exportRegistration/IOR/IORCode';
 import GenAI from './components/GenAI/GenAI';
 import ChatInterface from './components/GenAI/ChatInterface';
+import ShippingDoc from './components/shippingDocumentation/ShippingDoc';
+import PaymentReconciliation from './components/PaymentReconciliation/PaymentReconciliation';
+import TaxDocumentation from './components/TaxDocumentation/TaxDocumentation';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.css';
 
@@ -36,6 +39,9 @@ function App() {
             <Route path="/gst-lut" element={<GSTCode isMenuOpen={isMenuOpen} />} />
             <Route path="/ior" element={<IORCode isMenuOpen={isMenuOpen} />} />
             <Route path="/ai-chat" element={<ChatInterface/>} />
+            <Route path="/shipping-documentation" element={<ShippingDoc isMenuOpen={isMenuOpen}/>} />
+            <Route path="/payment-reconciliation" element={<PaymentReconciliation isMenuOpen={isMenuOpen}/>} />
+            <Route path="/tax-documentation" element={<TaxDocumentation isMenuOpen={isMenuOpen}/>} />
           </Routes>
         </div>
       </Router>

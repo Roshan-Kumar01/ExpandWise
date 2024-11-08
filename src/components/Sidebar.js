@@ -46,10 +46,21 @@ const Sidebar = ({ isVisible }) => {
             </li>
           </ul>
         )}
-        <li>Product Documentation</li>
-        <li>Shipping Documentation</li>
-        <li>Payment Reconciliation</li>
-        <li>Tax Documentation</li>
+        <Link to="/product-documentation" style={{ textDecoration: 'none' }}>
+           <li>Product Documentation</li>
+        </Link>
+
+        <Link to="/shipping-documentation" style={{ textDecoration: 'none' }}>
+           <li>Shipping Documentation</li>
+        </Link>
+        
+        <Link to="/payment-reconciliation" style={{ textDecoration: 'none' }}>
+            <li>Payment Reconciliation</li>
+        </Link>
+
+        <Link to="/tax-documentation" style={{ textDecoration: 'none' }}>
+            <li>Tax Documentation</li>
+        </Link>
         <li>Global Exports News</li>
       </ul>
     </aside>
