@@ -1,0 +1,106 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: white;
+  width: 600px;
+  max-width: 90%;
+  max-height: 80vh; /* Limit modal height to 80% of the viewport */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow-y: auto; /* Add vertical scroll if content exceeds max-height */
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.modal-header h2 {
+  margin: 0;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.modal-body {
+  padding: 20px 0;
+}
+
+.modal-body h3 {
+  margin-top: 0;
+}
+
+.modal-body p,
+.modal-body ol {
+  margin-bottom: 1cm; /* Adds 1cm space between the content and the buttons */
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between buttons */
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.accordion {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+  font-size: 1em;
+  text-align: left;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.accordion-content {
+  padding-left: 20px; /* Indentation for the accordion content */
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.accordion-content ul, .accordion-content p {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.accordion-content ul li {
+  margin-bottom: 0.5cm;
+}
+/* .accordion:after {
+  content: ' ▼';
+} */
+
+.modal-body ol {
+  padding-left: 20px; /* Optional: adds some indentation for the list */
+}
+
+.modal-body ol li {
+  margin-bottom: 0.5cm; /* Adds 1 cm space between each list item */
+ 
+}

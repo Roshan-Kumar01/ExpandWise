@@ -1,0 +1,155 @@
+.exports-registration {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #2c3e50;
+}
+
+.exports-registration h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.right-component--expanded {
+  width: 100%;
+  margin-left: 0;
+}
+
+.right-component--with-sidebar {
+  width: calc(100% - 250px);
+  margin-left: 250px;
+}
+
+.breadcrumb {
+  color: #0066cc;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.compliance-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.compliance-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  cursor: pointer; /* Pointer cursor for clickable effect */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effects */
+}
+
+.compliance-card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+.compliance-card:active {
+  transform: translateY(0); /* Reset lift effect on click */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reset shadow on click */
+}
+
+.card-number {
+  font-size: 3rem;
+  color: #d3d3d3;
+  margin-bottom: 10px;
+}
+
+.compliance-card h3 {
+  color: #0066cc;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.compliance-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+/* ExportsRegistration.css */
+
+.exports-registration {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #2c3e50;
+  }
+  
+  .exports-registration h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .right-component--expanded {
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .right-component--with-sidebar {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+  }
+  
+  .breadcrumb {
+    color: #0066cc;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .compliance-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .compliance-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    cursor: pointer; /* Pointer cursor for clickable effect */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effects */
+  }
+  
+  .compliance-card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+  }
+  
+  .compliance-card:active {
+    transform: translateY(0); /* Reset lift effect on click */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reset shadow on click */
+  }
+  
+  .card-number {
+    font-size: 3rem;
+    color: #d3d3d3;
+    margin-bottom: 10px;
+  }
+  
+  .compliance-card h3 {
+    color: #0066cc;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .compliance-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  

@@ -5,7 +5,7 @@ const dotenv = require('dotenv');
   
 //config 
 if(process.env.NODE_ENV !== "PRODUCTION"){
-    dotenv.config({path:"./config/config.env"});
+    dotenv.config({path:"./backend/config/config.env"});
 }
 
 const server = app.listen(process.env.PORT, () => {
