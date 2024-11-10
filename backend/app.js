@@ -15,4 +15,9 @@ const genAIChat = require('./routes/chatRoute')
 
 app.use("/api/v1",genAIChat)
 
+app.use(express.static(path.join(__dirname,"../build")))
+app.get("*",(req,res) => {
+    res.sendFile(path.resolve(__dirname,"../build/index.html"))
+})
+
 module.exports = app;

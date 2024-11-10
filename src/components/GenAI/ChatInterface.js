@@ -41,7 +41,7 @@ function ChatInterface() {
 
         try {
             // Make an API call to get the AI response
-            const response = await fetch('http://localhost:4000/api/v1/ai-chat', {
+            const response = await fetch('/api/v1/ai-chat', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
